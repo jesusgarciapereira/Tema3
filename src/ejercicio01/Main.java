@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Declaramos la variable que le pediremos al usuario
+		// Declaramos la variable del número que le pediremos al usuario
 		int n = -1;
 
 		// Activamos el Scanner

@@ -36,7 +36,7 @@ public class Main {
 		} while (n < 0);
 
 		// Llamamos a la función eco() con el número introducido por el usuario como parámetro
-		Funciones.eco(n);
+		Funcion.eco(n);
 
 		// Cerramos el Scanner
 		sc.close();

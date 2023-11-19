@@ -12,7 +12,7 @@ public class Funcion {
 		else {
 			// Bucle for para buscar algún divisor entre el 2 y la raíz cuadrada del número
 			for (int i = 2; i <= Math.sqrt(n); i++) {
-				// Si alguno de ellos es divisor del número, devolverá falso
+				// Si, al menos, uno ellos es divisor del número, devolverá falso
 				if (n % i == 0)
 					return false;
 			}

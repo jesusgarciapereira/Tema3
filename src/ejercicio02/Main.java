@@ -65,7 +65,7 @@ public class Main {
 			 * instrucciones */
 		} while (!tipoCorrectoB);
 
-		/* Llamamos a la función comprendidosEntreDos(a, b) con los números introducidos
+		/* Llamamos a la función comprendidosEntreDos() con los números introducidos
 		 * por el usuario como parámetro */
 		Funcion.comprendidosEntreDos(a, b);
 

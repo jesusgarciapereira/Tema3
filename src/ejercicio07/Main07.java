@@ -10,6 +10,9 @@ public class Main07 {
 		// Declaramos la variable del número que le pediremos al usuario
 		int n = 0;
 
+		// Declaramos la variable del contador de divisores primos
+		boolean esPrimo;
+
 		// Activamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -38,8 +41,14 @@ public class Main07 {
 			// Mientras el número sea menor que 1, repetiremos las instrucciones
 		} while (n < 1);
 
-		// Mostramos el resultado
-		System.out.println("El número " + n + (Funcion07.esPrimo(n) ? " es primo" : " no es primo"));
+		/*
+		 * Establecemos la relación entre las variables llamando a la función
+		 * esPrimo() con el número introducido por el usuario como parámetro
+		 */
+		esPrimo = Funcion07.esPrimo(n);
+		
+		// Probamos el funcionamiento de la función
+		System.out.println("El número " + n + (esPrimo ? " es primo" : " no es primo"));
 
 		// Cerramos el Scanner
 		sc.close();

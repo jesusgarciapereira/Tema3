@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Main06 {
 
 	public static void main(String[] args) {
 		
@@ -91,7 +91,7 @@ public class Main {
 		 * Llamamos a la función areaVolumen() con los números introducido por el usuario
 		 * como parámetro
 		 */
-		Funcion.areaVolumen(opcion, radio, altura);
+		Funcion06.areaVolumen(opcion, radio, altura);
 		// Cerramos el Scanner
 		sc.close();
 	}

@@ -1,6 +1,6 @@
 package ejercicio02;
 
-public class Funcion {
+public class Funcion02 {
 
 	// Función comprendidosEntreDos()
 	static void comprendidosEntreDos(int a, int b) {

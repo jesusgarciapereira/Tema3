@@ -1,22 +1,18 @@
-package ejercicio03;
+package ejercicio02;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Main02 {
 
 	public static void main(String[] args) {
+
 		// Declaramos la variables de los números que le pediremos al usuario
 		int a = 0;
 		int b = 0;
 
-		// Declaramos la variable que mostraremos
-		int max;
-
-		/*
-		 * Declaramos variables booleanas para verificar si los datos ingresados son del
-		 * tipo correcto
-		 */
+		/* Declaramos variables booleanas para verificar si los datos ingresados son del
+		 * tipo correcto */
 		boolean tipoCorrectoA = false;
 		boolean tipoCorrectoB = false;
 
@@ -24,8 +20,8 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		// Presentamos el programa
-		System.out.println("Número máximo de a y b");
-		System.out.println("--------------------");
+		System.out.println("Números comprendidos entre a y b");
+		System.out.println("--------------------------------");
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
@@ -37,19 +33,15 @@ public class Main {
 				// Marcamos 'tipoCorrectoA' como true si el valor de 'a' es del tipo correcto
 				tipoCorrectoA = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'a' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'a' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoA);
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
@@ -62,29 +54,20 @@ public class Main {
 				// Marcamos 'tipoCorrectoB' como true si el valor de 'b' es del tipo correcto
 				tipoCorrectoB = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'b' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'b' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoB);
 
-		/*
-		 * Establecemos la relación entre las variables llamando a la función
-		 * numeroMaximo() con los números introducidos por el usuario como parámetro
-		 */
-		max = Funcion.numeroMaximo(a, b);
-
-		// Mostramos el resultado
-		System.out.println("El número máximo de " + a + " y de " + b + " es: " + max);
+		/* Llamamos a la función comprendidosEntreDos() con los números introducidos
+		 * por el usuario como parámetro */
+		Funcion02.comprendidosEntreDos(a, b);
 
 		// Cerramos el Scanner
 		sc.close();

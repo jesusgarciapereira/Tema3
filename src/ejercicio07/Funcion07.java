@@ -1,9 +1,9 @@
 package ejercicio07;
 
-public class Funcion {
+public class Funcion07 {
 
 	// Función esPrimo()
-	static boolean esPrimo(int n) {
+	public static boolean esPrimo(int n) {
 		
 		// Si el número es 1, devolverá falso
 		if (n == 1)

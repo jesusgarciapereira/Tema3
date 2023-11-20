@@ -3,7 +3,7 @@ package ejercicio01;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Main01 {
 
 	public static void main(String[] args) {
 
@@ -36,7 +36,7 @@ public class Main {
 		} while (n < 0);
 
 		// Llamamos a la función eco() con el número introducido por el usuario como parámetro
-		Funcion.eco(n);
+		Funcion01.eco(n);
 
 		// Cerramos el Scanner
 		sc.close();

@@ -1,6 +1,6 @@
 package ejercicio06;
 
-public class Funcion {
+public class Funcion06 {
 
 	// Función areaVolumen()
 	static void areaVolumen(int opcion, double radio, double altura) {

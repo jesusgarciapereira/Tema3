@@ -1,6 +1,6 @@
 package ejercicio05;
 
-public class Funcion {
+public class Funcion05 {
 
 	// Función tablaDel()
 	static void tablaDel(int n) {

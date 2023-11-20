@@ -2,7 +2,7 @@ package ejercicio04;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main04 {
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class Main {
 		// PREGUNTAR A ELENA
 		x = sc.nextLine().charAt(0);
 
-		System.out.println("El caracter '" + x + "'" + (Funcion.esVocal(x) ? " es una vocal" : " no es una vocal"));
+		System.out.println("El caracter '" + x + "'" + (Funcion04.esVocal(x) ? " es una vocal" : " no es una vocal"));
 		sc.close();
 
 	}

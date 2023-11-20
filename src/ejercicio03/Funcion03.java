@@ -1,6 +1,6 @@
 package ejercicio03;
 
-public class Funcion {
+public class Funcion03 {
 
 	// Función numeroMaximo()
 	static int numeroMaximo(int a, int b) {

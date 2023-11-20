@@ -1,9 +1,9 @@
-package ejercicio05;
+package ejercicio07;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Main07 {
 
 	public static void main(String[] args) {
 
@@ -14,17 +14,16 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		// Presentamos el programa
-		System.out.println("Tabla del n");
-		System.out.println("-----------");
+		System.out.println("Número n ¿es primo?");
+		System.out.println("-------------------");
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
 				/*
-				 * Solicitamos al usuario el número de veces que mostrará el mensaje y leemos el
-				 * número
+				 * Solicitamos al usuario el número y lo leemos
 				 */
-				System.out.println("Introduzca un valor para n (a partir de 1)");
+				System.out.println("Introduzca un número y mostraré si es primo (a partir de 1)");
 				n = sc.nextInt();
 
 				/*
@@ -37,12 +36,12 @@ public class Main {
 			}
 
 			// Mientras el número sea menor que 1, repetiremos las instrucciones
-		} while (n <= 1);
+		} while (n < 1);
 
-		// Llamamos a la función tablaDel() con el número introducido por el usuario como parámetro
-		Funcion.tablaDel(n);
-		
-		//Cerramos el Scanner
+		// Mostramos el resultado
+		System.out.println("El número " + n + (Funcion07.esPrimo(n) ? " es primo" : " no es primo"));
+
+		// Cerramos el Scanner
 		sc.close();
 	}
 

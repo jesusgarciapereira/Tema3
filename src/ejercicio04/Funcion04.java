@@ -1,6 +1,6 @@
 package ejercicio04;
 
-public class Funcion {
+public class Funcion04 {
 
 	static boolean esVocal(char x) {
 

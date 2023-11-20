@@ -1,6 +1,6 @@
 package ejercicio01;
 
-public class Funcion {
+public class Funcion01 {
 
 	// Función eco()
 	static void eco(int n) {

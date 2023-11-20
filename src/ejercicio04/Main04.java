@@ -16,7 +16,8 @@ public class Main04 {
 		System.out.println("Introduzca cualquier caracter (sólo leeré el primero)");
 		// PREGUNTAR A ELENA
 		x = sc.nextLine().charAt(0);
-
+		
+		// Probamos el funcionamiento de la función
 		System.out.println("El caracter '" + x + "'" + (Funcion04.esVocal(x) ? " es una vocal" : " no es una vocal"));
 		sc.close();
 

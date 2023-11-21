@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main09 {
 
 	public static void main(String[] args) {
+		
 		// Declaramos la variables de los operandos que le pediremos al usuario
 		double operandoA = 0;
 		double operandoB = 0;
@@ -49,7 +50,7 @@ public class Main09 {
 			}
 
 			/*
-			 * Mientras la variable 'a' no sea del tipo correcto, repetiremos las
+			 * Mientras la variable 'operandoA' no sea del tipo correcto, repetiremos las
 			 * instrucciones
 			 */
 		} while (!tipoCorrectoA);
@@ -57,7 +58,7 @@ public class Main09 {
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
-				// Solicitamos al usuario un valor para el segundo número y lo leemos
+				// Solicitamos al usuario un valor para el segundo operando y lo leemos
 				System.out.println("Introduzca un valor para el segundo operando (sólo números enteros)");
 				operandoB = sc.nextDouble();
 
@@ -74,11 +75,12 @@ public class Main09 {
 			}
 
 			/*
-			 * Mientras la variable 'b' no sea del tipo correcto, repetiremos las
+			 * Mientras la variable 'operandoB' no sea del tipo correcto, repetiremos las
 			 * instrucciones
 			 */
 		} while (!tipoCorrectoB);
 
+		// Mostramos las opciones a elegir para el valor de operacion
 		System.out.println("Operaciones de la calculadora");
 		System.out.println("1. Suma");
 		System.out.println("2. Resta");
@@ -86,19 +88,31 @@ public class Main09 {
 		System.out.println("4. División");
 		System.out.println();
 
+		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
+				// Solicitamos al usuario un valor para la operacion y lo leemos
 				System.out.println("Elija una opción");
 				operacion = sc.nextInt();
+				
+				/*
+				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer
+				 */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
-		} while (operacion != 1 && operacion != 2 && operacion != 3 && operacion != 4);
+			
+			/*
+			 * Mientras la variable 'operacion' no sea entre 1 y 4, repetiremos las
+			 * instrucciones
+			 */
+		} while (operacion < 1 || operacion > 4);
 
 		/*
 		 * Establecemos la relación entre las variables llamando a la función
-		 * numeroMaximo() con los números introducidos por el usuario como parámetro
+		 * calculadora() con los números introducidos por el usuario como parámetro
 		 */
 		resultado = Funcion09.calculadora(operandoA, operandoB, operacion);
 
@@ -115,7 +129,6 @@ public class Main09 {
 				System.out.println(resultado);
 		}
 		default -> System.out.println(" ");
-
 		}
 
 		// Cerramos el Scanner

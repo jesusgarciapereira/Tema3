@@ -83,7 +83,7 @@ public class Main03 {
 		 */
 		max = Funcion03.numeroMaximo(a, b);
 
-		// Mostramos el resultado
+		// Probamos el funcionamiento de la función
 		System.out.println("El número máximo de " + a + " y de " + b + " es: " + max);
 
 		// Cerramos el Scanner

@@ -3,8 +3,6 @@ package ejercicio09;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import ejercicio03.Funcion03;
-
 public class Main09 {
 
 	public static void main(String[] args) {
@@ -35,9 +33,10 @@ public class Main09 {
 			try {
 				// Solicitamos al usuario un valor para el primer operando y lo leemos
 				System.out.println("Introduzca un valor para el primer operando (sólo números enteros)");
-				operandoA = sc.nextInt();
+				operandoA = sc.nextDouble();
 
-				// Marcamos 'tipoCorrectoA' como true si el valor de 'operandoA' es del tipo correcto
+				// Marcamos 'tipoCorrectoA' como true si el valor de 'operandoA' es del tipo
+				// correcto
 				tipoCorrectoA = true;
 
 				/*
@@ -60,7 +59,7 @@ public class Main09 {
 			try {
 				// Solicitamos al usuario un valor para el segundo número y lo leemos
 				System.out.println("Introduzca un valor para el segundo operando (sólo números enteros)");
-				operandoB = sc.nextInt();
+				operandoB = sc.nextDouble();
 
 				// Marcamos 'tipoCorrectoB' como true si el valor de 'b' es del tipo correcto
 				tipoCorrectoB = true;
@@ -79,15 +78,45 @@ public class Main09 {
 			 * instrucciones
 			 */
 		} while (!tipoCorrectoB);
-// FALTA CALCULADORA
+
+		System.out.println("Operaciones de la calculadora");
+		System.out.println("1. Suma");
+		System.out.println("2. Resta");
+		System.out.println("3. Multiplicación");
+		System.out.println("4. División");
+		System.out.println();
+
+		do {
+			try {
+				System.out.println("Elija una opción");
+				operacion = sc.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("El dato no es del tipo correcto");
+				sc.nextLine();
+			}
+		} while (operacion != 1 && operacion != 2 && operacion != 3 && operacion != 4);
+
 		/*
 		 * Establecemos la relación entre las variables llamando a la función
 		 * numeroMaximo() con los números introducidos por el usuario como parámetro
 		 */
-		max = Funcion03.numeroMaximo(a, b);
+		resultado = Funcion09.calculadora(operandoA, operandoB, operacion);
 
 		// Mostramos el resultado
-		System.out.println("El número máximo de " + a + " y de " + b + " es: " + max);
+		System.out.print("El resultado de ");
+		switch (operacion) {
+		case 1 -> System.out.println(operandoA + " + " + operandoB + " es: " + resultado);
+		case 2 -> System.out.println(operandoA + " - " + operandoB + " es: " + resultado);
+		case 3 -> System.out.println(operandoA + " * " + operandoB + " es: " + resultado);
+		case 4 -> {System.out.print(operandoA + " / " + operandoB + " es: ");
+			if (operandoB == 0)
+				System.out.println("No se puede dividir entre 0");
+			else
+				System.out.println(resultado);
+		}
+		default -> System.out.println(" ");
+
+		}
 
 		// Cerramos el Scanner
 		sc.close();

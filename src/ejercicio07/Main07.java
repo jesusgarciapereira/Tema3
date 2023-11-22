@@ -23,16 +23,13 @@ public class Main07 {
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
-				/*
-				 * Solicitamos al usuario el número y lo leemos
-				 */
+	
+				// Solicitamos al usuario el número y lo leemos
 				System.out.println("Introduzca un número y mostraré si es primo (a partir de 1)");
 				n = sc.nextInt();
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
@@ -41,10 +38,8 @@ public class Main07 {
 			// Mientras el número sea menor que 1, repetiremos las instrucciones
 		} while (n < 1);
 
-		/*
-		 * Establecemos la relación entre las variables llamando a la función
-		 * esPrimo() con el número introducido por el usuario como parámetro
-		 */
+		/* Establecemos la relación entre las variables llamando a la función
+		 * esPrimo() con el número introducido por el usuario como parámetro */
 		esPrimo = Funcion07.esPrimo(n);
 		
 		// Probamos el funcionamiento de la función

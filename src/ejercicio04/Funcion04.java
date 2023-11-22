@@ -9,9 +9,9 @@ public class Funcion04 {
 
 		// Le asignamos un Switch (incluirá también mayúsculas)
 		esVocal = switch (caracter.toLowerCase()) {
-		// Si es parámetro es uno de estos casos, le asignamos true
+		// Si es parámetro es uno de estos casos, le asigna true
 		case "a", "e", "i", "o", "u" -> true;
-		// En cualquier otro caso, le asignamos false
+		// En cualquier otro caso, le asigna false
 		default -> false;
 		};
 		

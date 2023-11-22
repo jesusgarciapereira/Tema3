@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main03 {
 
 	public static void main(String[] args) {
+		
 		// Declaramos la variables de los números que le pediremos al usuario
 		int a = 0;
 		int b = 0;

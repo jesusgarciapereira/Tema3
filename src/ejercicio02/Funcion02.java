@@ -12,14 +12,16 @@ public class Funcion02 {
 		if (a == b)
 			System.out.println("Nada, ambos son iguales");
 		// Si el primer parámetro es menor que el segundo
-		else if (a < b) { 
-			// Bucle for para mostrar los números comprendidos entre ambos
+		else if (a < b) {
+			/* Bucle for para mostrar los números comprendidos entre ambos (en orden
+			 * ascendente) */
 			for (int i = a + 1; i < b; i++) {
 				System.out.print(i + " ");
 			}
 			// Si el primer parámetro es mayor que el segundo
 		} else {
-			// Bucle for para mostrar los números comprendidos entre ambos
+			/* Bucle for para mostrar los números comprendidos entre ambos (en orden
+			 * descendente) */
 			for (int i = a - 1; i > b; i--) {
 				System.out.print(i + " ");
 			}

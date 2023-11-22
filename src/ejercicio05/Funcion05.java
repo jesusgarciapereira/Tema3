@@ -9,10 +9,8 @@ public class Funcion05 {
 		System.out.println("Tabla del " + n);
 		System.out.println();
 
-		/*
-		 * Bucle for para mostrar la multiplicación de n por todos los números del 1 al
-		 * 10
-		 */
+		/* Bucle for para mostrar la multiplicación de n por todos los números del 1 al
+		 * 10 */
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(n + " x " + i + " = " + (n * i));
 		}

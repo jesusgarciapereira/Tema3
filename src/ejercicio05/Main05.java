@@ -20,17 +20,13 @@ public class Main05 {
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
-				/*
-				 * Solicitamos al usuario el número de veces que mostrará el mensaje y leemos el
-				 * número
-				 */
+				/* Solicitamos al usuario el número correspondiente a la tabla de multiplicar y
+				 * lo leemos */
 				System.out.println("Introduzca un valor para n (a partir de 1)");
 				n = sc.nextInt();
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
@@ -39,11 +35,11 @@ public class Main05 {
 			// Mientras el número sea menor que 1, repetiremos las instrucciones
 		} while (n <= 1);
 
-		// Llamamos a la función tablaDel() con el número introducido por el usuario como parámetro
+		/* Llamamos a la función tablaDel() con el número introducido por el usuario
+		 como parámetro */
 		Funcion05.tablaDel(n);
-		
-		//Cerramos el Scanner
+
+		// Cerramos el Scanner
 		sc.close();
 	}
-
 }

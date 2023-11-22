@@ -14,10 +14,8 @@ public class Main03 {
 		// Declaramos la variable que mostraremos
 		int max;
 
-		/*
-		 * Declaramos variables booleanas para verificar si los datos ingresados son del
-		 * tipo correcto
-		 */
+		/* Declaramos variables booleanas para verificar si los datos ingresados son del
+		 * tipo correcto */
 		boolean tipoCorrectoA = false;
 		boolean tipoCorrectoB = false;
 
@@ -38,19 +36,15 @@ public class Main03 {
 				// Marcamos 'tipoCorrectoA' como true si el valor de 'a' es del tipo correcto
 				tipoCorrectoA = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'a' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'a' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoA);
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
@@ -63,25 +57,19 @@ public class Main03 {
 				// Marcamos 'tipoCorrectoB' como true si el valor de 'b' es del tipo correcto
 				tipoCorrectoB = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'b' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'b' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoB);
 
-		/*
-		 * Establecemos la relación entre las variables llamando a la función
-		 * numeroMaximo() con los números introducidos por el usuario como parámetro
-		 */
+		/* Establecemos la relación entre las variables llamando a la función
+		 * numeroMaximo() con los números introducidos por el usuario como parámetro */
 		max = Funcion03.numeroMaximo(a, b);
 
 		// Probamos el funcionamiento de la función

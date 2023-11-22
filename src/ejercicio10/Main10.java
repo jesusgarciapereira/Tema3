@@ -13,11 +13,14 @@ public class Main10 {
 		System.out.println("Fecha correcta");
 		System.out.println("--------------");
 
+		System.out.println("Introduzca el número correspondiente al día");
 		dia = sc.nextInt();
+		System.out.println("Introduzca el número correspondiente al mes");
 		mes = sc.nextInt();
+		System.out.println("Introduzca el número correspondiente al año");
 		annio = sc.nextInt();
 
-		fechaCorrecta = Funcion10.fechaCorrecta(dia, mes, annio);
+		fechaCorrecta = Funcion10.esFechaCorrecta(dia, mes, annio);
 
 		System.out.println(
 				"La fecha " + dia + "/" + mes + "/" + annio + (fechaCorrecta ? " es correcta" : " no es correcta"));

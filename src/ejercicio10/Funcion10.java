@@ -2,10 +2,12 @@ package ejercicio10;
 
 public class Funcion10 {
 
-	static boolean fechaCorrecta(int dia, int mes, int annio) {
-		if (dia < 1 || dia > 30 || mes < 1 || mes > 12 || annio < 0)
-			return false;
-		else
-			return true;
+	static boolean esFechaCorrecta(int dia, int mes, int annio) {
+
+		boolean fechaCorrecta;
+
+		fechaCorrecta = (dia > 0 && dia < 31 && mes > 0 && mes < 13) ? true : false;
+
+		return fechaCorrecta;
 	}
 }

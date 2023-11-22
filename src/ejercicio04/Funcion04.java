@@ -2,12 +2,15 @@ package ejercicio04;
 
 public class Funcion04 {
 
-	static boolean esVocal(char x) {
+	static boolean esVocal(String caracter) {
 
-		return switch (x) {
-		case 'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U' -> true;
-		default -> false;
-		};
+		boolean esVocal;
+
+		switch (caracter.toLowerCase()) {
+		case "a", "e", "i", "o", "u" -> esVocal = true;
+		default -> esVocal = false;
+		}
+		return esVocal;
 
 	}
 }

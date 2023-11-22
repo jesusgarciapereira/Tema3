@@ -23,7 +23,7 @@ public class Funcion05 {
 		Random r = new Random();
 
 		for (int i = 1; i <= cantNumeros; i++) {
-			r.nextInt(valorMinimo + 1, valorMaximo);
+			r.nextInt(valorMinimo, valorMaximo);
 		}
 	}
 }

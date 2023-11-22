@@ -5,9 +5,9 @@ public class Funcion01 {
 	// Función eco()
 	static void eco(int n) {
 
-		// Switch para evaluar cada caso
+		// Switch para evaluar cada caso del parámetro
 		switch (n) {
-		// Si el parámetro es igual a 0, mostrará un mensaje personalizado
+		// Si es 0, mostrará un mensaje personalizado
 		case 0 -> System.out.println(n + " veces... silencio absoluto");
 		// En cualquier otro caso, mostrará n veces el mensaje "Eco..."
 		default -> {

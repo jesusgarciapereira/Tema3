@@ -36,23 +36,19 @@ public class Main09 {
 				System.out.println("Introduzca un valor para el primer operando (sólo números enteros)");
 				operandoA = sc.nextDouble();
 
-				// Marcamos 'tipoCorrectoA' como true si el valor de 'operandoA' es del tipo
-				// correcto
+				/* Marcamos 'tipoCorrectoA' como true si el valor de 'operandoA' es del tipo
+				 * correcto */
 				tipoCorrectoA = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'operandoA' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'operandoA' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoA);
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
@@ -62,22 +58,19 @@ public class Main09 {
 				System.out.println("Introduzca un valor para el segundo operando (sólo números enteros)");
 				operandoB = sc.nextDouble();
 
-				// Marcamos 'tipoCorrectoB' como true si el valor de 'b' es del tipo correcto
+				/* Marcamos 'tipoCorrectoB' como true si el valor de 'operandoB' es del tipo
+				 * correcto */
 				tipoCorrectoB = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'operandoB' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'operandoB' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoB);
 
 		// Mostramos las opciones a elegir para el valor de operacion
@@ -95,29 +88,27 @@ public class Main09 {
 				System.out.println("Elija una opción");
 				operacion = sc.nextInt();
 				
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 			
-			/*
-			 * Mientras la variable 'operacion' no sea entre 1 y 4, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'operacion' no esté entre 1 y 4, repetiremos las
+			 * instrucciones */
 		} while (operacion < 1 || operacion > 4);
 
 		/*
-		 * Establecemos la relación entre las variables llamando a la función
+		 * Asignamos un valor a nuestro resultado llamando a la función
 		 * calculadora() con los números introducidos por el usuario como parámetro
 		 */
 		resultado = Funcion09.calculadora(operandoA, operandoB, operacion);
 
-		// Mostramos el resultado
+		// Mostramos la primera parte del resultado
 		System.out.print("El resultado de ");
+		
+		// Switch para mostrar la segunda parte del resultado según cada caso
 		switch (operacion) {
 		case 1 -> System.out.println(operandoA + " + " + operandoB + " es: " + resultado);
 		case 2 -> System.out.println(operandoA + " - " + operandoB + " es: " + resultado);

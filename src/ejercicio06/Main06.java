@@ -33,10 +33,8 @@ public class Main06 {
 				System.out.println("2. Calcular volumen del cilindro");
 				opcion = sc.nextInt();
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
@@ -54,10 +52,8 @@ public class Main06 {
 						"Introduzca la longitud del radio (en centímetros, mayor que 0 y, si tiene decimales, use un punto como en el ejemplo 2.5)");
 				radio = sc.nextDouble();
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
@@ -75,10 +71,8 @@ public class Main06 {
 						"Introduzca la longitud de la altura (en centímetros, mayor que 0 y, si tiene decimales, recuerde usar un punto)");
 				altura = sc.nextDouble();
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
@@ -87,11 +81,10 @@ public class Main06 {
 			// Mientras la altura sea menor que 0, repetiremos las instrucciones
 		} while (altura <= 0);
 		
-		/*
-		 * Llamamos a la función areaVolumen() con los números introducido por el usuario
-		 * como parámetro
-		 */
+		/* Llamamos a la función areaVolumen() con los números introducido por el usuario
+		 * como parámetro */
 		Funcion06.areaVolumen(opcion, radio, altura);
+		
 		// Cerramos el Scanner
 		sc.close();
 	}

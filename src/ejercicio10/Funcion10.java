@@ -8,7 +8,7 @@ public class Funcion10 {
 		// Declaramos la variable que devolverá la función
 		boolean fechaCorrecta;
 
-		// Asignamos el valor del boolean con un ternario
+		// Asignamos el valor del boolean 
 		fechaCorrecta = dia > 0 && dia < 31 && mes > 0 && mes < 13;
 
 		// Devolverá el valor de nuestro boolean

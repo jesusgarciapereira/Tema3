@@ -37,23 +37,18 @@ public class Main10 {
 				dia = sc.nextInt();
 
 				/* Marcamos 'tipoCorrectoDia' como true si el valor de 'dia' es del tipo
-				 * correcto
-				 */
+				 * correcto */
 				tipoCorrectoDia = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'dia' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'dia' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoDia);
 
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
@@ -63,26 +58,21 @@ public class Main10 {
 				System.out.println("Introduzca el número correspondiente al mes");
 				mes = sc.nextInt();
 
-				/*
-				 * Marcamos 'tipoCorrectoMes' como true si el valor de 'mes' es del tipo
-				 * correcto
-				 */
+				/* Marcamos 'tipoCorrectoMes' como true si el valor de 'mes' es del tipo
+				 * correcto */
 				tipoCorrectoMes = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'mes' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'mes' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoMes);
+		
 		// Bucle do-while para solicitar la entrada del usuario hasta que sea válida
 		do {
 			try {
@@ -90,31 +80,23 @@ public class Main10 {
 				System.out.println("Introduzca el número correspondiente al año");
 				annio = sc.nextInt();
 
-				/*
-				 * Marcamos 'tipoCorrectoAnnio' como true si el valor de 'annio' es del tipo
-				 * correcto
-				 */
+				/* Marcamos 'tipoCorrectoAnnio' como true si el valor de 'annio' es del tipo
+				 * correcto */
 				tipoCorrectoAnnio = true;
 
-				/*
-				 * Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
-				 * error y limpiamos el buffer
-				 */
+				/* Si el usuario ingresa un dato del tipo incorrecto, mostramos un mensaje de
+				 * error y limpiamos el buffer */
 			} catch (InputMismatchException e) {
 				System.out.println("El dato no es del tipo correcto");
 				sc.nextLine();
 			}
 
-			/*
-			 * Mientras la variable 'annio' no sea del tipo correcto, repetiremos las
-			 * instrucciones
-			 */
+			/* Mientras la variable 'annio' no sea del tipo correcto, repetiremos las
+			 * instrucciones */
 		} while (!tipoCorrectoAnnio);
 
-		/*
-		 * Asignamos un valor a nuestro resultado llamando a la función
-		 * esFechaCorrecta() con los números introducidos por el usuario como parámetro
-		 */
+		/* Asignamos un valor a nuestra fecha correcta llamando a la función
+		 * esFechaCorrecta() con los números introducidos por el usuario como parámetro */
 		fechaCorrecta = Funcion10.esFechaCorrecta(dia, mes, annio);
 
 		// Probamos el funcionamiento de la función

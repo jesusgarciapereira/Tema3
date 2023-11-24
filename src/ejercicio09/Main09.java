@@ -7,7 +7,7 @@ public class Main09 {
 
 	public static void main(String[] args) {
 		
-		// Declaramos la variables de los operandos que le pediremos al usuario
+		// Declaramos las variables que le pediremos al usuario
 		double operandoA = 0;
 		double operandoB = 0;
 		int operacion = 0;
@@ -15,10 +15,8 @@ public class Main09 {
 		// Declaramos la variable que mostraremos
 		double resultado;
 
-		/*
-		 * Declaramos variables booleanas para verificar si los datos ingresados son del
-		 * tipo correcto
-		 */
+		/* Declaramos variables booleanas para verificar si los datos ingresados son del
+		 * tipo correcto */
 		boolean tipoCorrectoA = false;
 		boolean tipoCorrectoB = false;
 
@@ -73,7 +71,7 @@ public class Main09 {
 			 * instrucciones */
 		} while (!tipoCorrectoB);
 
-		// Mostramos las opciones a elegir para el valor de operacion
+		// Mostramos las opciones a elegir para el valor de 'operacion'
 		System.out.println("Operaciones de la calculadora");
 		System.out.println("1. Suma");
 		System.out.println("2. Resta");
@@ -99,10 +97,8 @@ public class Main09 {
 			 * instrucciones */
 		} while (operacion < 1 || operacion > 4);
 
-		/*
-		 * Asignamos un valor a nuestro resultado llamando a la función
-		 * calculadora() con los números introducidos por el usuario como parámetro
-		 */
+		/* Asignamos un valor a nuestro resultado llamando a la función
+		 * calculadora() con los números introducidos por el usuario como parámetro */
 		resultado = Funcion09.calculadora(operandoA, operandoB, operacion);
 
 		// Mostramos la primera parte del resultado

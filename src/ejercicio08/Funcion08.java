@@ -14,7 +14,7 @@ public class Funcion08 {
 		boolean esPrimo;
 
 		// Bucle for desde el 2 hasta la raíz cuadrada del parámetro
-		for (int i = 2; i <= Math.sqrt(n); i++) {
+		for (int i = 2; i <= n; i++) {
 
 			/* Asignamos el valor de nuestro booleano llamando a la función esPrimo() con el
 			 * valor del contador del bucle como parámetro */

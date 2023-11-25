@@ -17,7 +17,7 @@ public class Main04 {
 		Scanner sc = new Scanner(System.in);
 
 		do {
-			// Pedimos al usuario un número y los leemos
+			// Pedimos al usuario un número y lo leemos
 			System.out.println("Escriba un número (0 ó 1)");
 			numero = sc.nextInt();
 		} // Se repiten las instrucciones si el numero no es 0 o 1
@@ -27,7 +27,7 @@ public class Main04 {
 		sc.nextLine();
 
 		do {
-			// Pedimos al usuario tres números enteros y los leemos
+			// Pedimos al usuario tres números enteros y lo leemos
 			System.out.println("Escriba un texto ('true' o 'false')");
 			cadena = sc.nextLine();
 		} // Se repiten las instrucciones si la cadena no es "true" o "false"

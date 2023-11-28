@@ -38,7 +38,7 @@ public class Funcion05 {
 		int numAleatorio;
 		Random r = new Random();
 
-		System.out.print(cantNumeros + " Número(s) aleatorio(s9 entre " + valorMinimo + " y " + valorMaximo + ": ");
+		System.out.print(cantNumeros + " Número(s) aleatorio(s) entre " + valorMinimo + " y " + valorMaximo + ": ");
 		for (int i = 1; i <= cantNumeros; i++) {
 			numAleatorio = r.nextInt(valorMinimo, valorMaximo + 1);
 			System.out.print(numAleatorio + " ");

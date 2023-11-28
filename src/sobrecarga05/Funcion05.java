@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Funcion05 {
 
-	// Funcion que muestra números comprendidos entre 0 y 1, tantos como indique el
-	// parámetro
+	// Funcion que genera números aleatorios comprendidos entre 0 y 1, tantos como
+	// indique el parámetro
 	static void numerosAleatorios(int cantNumeros) {
 		double numAleatorio;
 		Random r = new Random();

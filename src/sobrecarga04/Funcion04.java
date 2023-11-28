@@ -1,6 +1,7 @@
 package sobrecarga04;
 
 public class Funcion04 {
+	// Funcion que devolverá false si es parámetro es 0 y true si es 1
 	static boolean parseToBoolean(int numero) {
 		boolean isOne;
 
@@ -13,6 +14,7 @@ public class Funcion04 {
 		return isOne;
 	}
 
+	// Funcion que devolverá false si es parámetro es "false" y true si es "true"
 	static boolean parseToBoolean(String cadena) {
 		boolean isTrue;
 

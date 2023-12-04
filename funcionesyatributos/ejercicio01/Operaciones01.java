@@ -1,8 +1,11 @@
 package ejercicio01;
 
 public class Operaciones01 {
+
+	// Atributos
 	double num1, num2;
 
+	// Constructores
 	public Operaciones01() {
 	}
 
@@ -11,6 +14,7 @@ public class Operaciones01 {
 		this.num2 = num2;
 	}
 
+	// Métodos
 	public double suma() {
 		return num1 + num2;
 	}
@@ -32,10 +36,11 @@ public class Operaciones01 {
 		numMax = num1 >= num2 ? num1 : num2;
 		return numMax;
 	}
-
+	
 	public double min() {
 		double numMin;
 		numMin = num1 <= num2 ? num1 : num2;
 		return numMin;
 	}
+
 }
